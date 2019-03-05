@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT recipe (name, time*, yeild, ingredient-list, steps)*>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT time (prep,chill,cook)*>
+<!ELEMENT prep (#PCDATA)>
+<!ELEMENT chill (#PCDATA)>
+<!ELEMENT cook (#PCDATA )>
+<!ELEMENT yeild (#PCDATA)>
+<!ELEMENT ingredient-list (ingredient)*> 
+<!ELEMENT ingredient (amount+, description)>
+<!ELEMENT amount (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT steps (step)*>
+<!ELEMENT step (#PCDATA)>
+<!ATTLIST step order CDATA #REQUIRED>
